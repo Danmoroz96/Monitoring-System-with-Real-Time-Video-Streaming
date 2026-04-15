@@ -20,6 +20,12 @@ In this lab, I will build a simple real-time home monitoring system.
 ## Results
 * **Could the viewer watch the live stream?** Yes. By opening a web browser and navigating to `http://127.0.0.1:5000`, the live webcam video was successfully displayed and updated continuously in real-time.
 
+## Modifications & Bonus Task Completed
+* **Changed Display Width:** Updated the HTML template in the `/` route to display the video feed at a width of `800` pixels (increased from the original 640).
+* **Changed Camera Resolution:** Forced the OpenCV `VideoCapture` to capture at 720p (1280x720) using `camera.set()`.
+* **Performance Observation:** After increasing the resolution, the stream remained functional. However, because the images are larger, it requires more processing power to encode the JPEGs and more network bandwidth to send them, which can result in a slightly lower framerate compared to the default resolution.
+* **Bonus Task (Timestamp):** Successfully added a live timestamp to the video feed. I imported Python's `datetime` module and used `cv2.putText()` to draw the current date and time onto every frame just before it is encoded and streamed.
+
 ## Problems or Fixes
 * **Hardware limitation:** I only had access to one laptop for this lab. 
 * **Fix:** I adapted the architecture by running the Flask server locally and viewing the stream via the `localhost` address. The underlying pipeline (Camera → Capture → Encode → Stream → Viewer) remained exactly the same as requested by the lab instructions.
