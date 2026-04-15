@@ -32,6 +32,7 @@ In this lab, I will build a simple real-time home monitoring system.
 
 <img width="1172" height="201" alt="Screenshot 2026-04-15 215051" src="https://github.com/user-attachments/assets/bad6a886-9dee-42f7-9374-d1978f62d4c1" />
 
+<img width="1047" height="1020" alt="Screenshot 2026-04-15 221146" src="https://github.com/user-attachments/assets/130560e2-211b-4458-8e92-3dab61f5d133" />
 
 
 
